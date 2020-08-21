@@ -86,6 +86,56 @@ All template literals are wrapped in: "\${}"
 ` );
 
 
+/*
+Loops in JavaScript
+*/
+
+console.log("WHILE LOOPS PRACTICE : \n==============");
+let myWhileIterator = 5;
+while( myWhileIterator > 0)// repeats the code block so long as the condition
+
+{ // evaluates to (boolean)true.
+    console.log( `While Itrator: ${myWhileIterator}`);
+    myWhileIterator--; //Mywhileiterator = mywhileIterator -1
+}
+
+console.log( "FOR...OF LOOP PRACTICE:\n==================" );
+const myForArray = ["Wal-Mart", "Best Buy", "SuperStore", "Safeway"];
+for ( const arrayItem of myForArray ) // for...of will iterate on its own through the array.
+{ // We don't need to set a terminiation condition. We also get a great way for
+  // accessing the value from each iteration, based on the name we specify before
+  // the "of" keyword.
+  console.log( `This array item in our loop contains: ${arrayItem}` );
+}
+
+// let myNum = 5;
+// ALL THREE BELOW ARE EQUIVALENT:
+// myNum = myNum + 1;
+// myNum++; // Always is +1.
+// myNum += 1;
+
+console.log( "FOR LOOP PRACTICE:\n==================" );
+for ( let myForIterator = -5; myForIterator < 30; myForIterator += 10 )
+{ // for loops have 3 parts:
+  // ASSIGNMENT; CONDITION; ITERATION
+  console.log( `This iteration of our for loop's value is: ${myForIterator}` );
+}
+
+/**
+ * Functions in JavaScript.
+ */
+
+function myAdditionFunction ( num1 = 0, num2 = 0 ) {
+  return Number( num1 ) + Number( num2 );
+}
+
+// Testing out our function!
+const add2And4 = myAdditionFunction( 2, 4 );
+console.log( add2And4 );
+
+console.log( myAdditionFunction( -15, 35 ) );
+
+console.log( myAdditionFunction( 3.14, 70 ) );
 
 
 
