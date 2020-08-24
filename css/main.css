@@ -5,3 +5,9 @@
     box-sizing: border-box; /* Changes our box model a bit */
      
 }
+
+
+  
+  .salmon-coloured-text {
+    color: salmon;
+  }
