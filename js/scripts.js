@@ -149,7 +149,7 @@ function mySubractionFunction ( num1, num2 )
 }
 
 
-console.log( mySubtractionFunction( 100, 50 ) ); // 50
+
 
 // Fat-arrow function syntax, as an alternative.
 /**
