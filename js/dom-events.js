@@ -43,3 +43,50 @@ console.log( 'Outputted string into our <h2> element!' );
 // We are replacing the existing CSS string.
 myH2.className = 'salmon-coloured-text';
 console.log( 'Change the H2 font colour to "salmon."' );
+
+
+// We can use JS to update / replace content in elements.
+myH2.textContent = "This H2 Was Found and Updated!";
+console.log( 'Outputted string into our <h2> element!' );
+// We are replacing the existing CSS string.
+myH2.className = 'salmon-coloured-text';
+console.log( 'Change the H2 font colour to "salmon."' );
+
+/**
+ * Event Listeners.
+ * We can add "listeners" to elements... they "listen" for user actions.
+ * When a user action is detected, we can have our JS follow a set of instructions.
+ */
+
+// We can add event listeners to HTMLElement objects.
+/**
+ * There are two arguments to the addEventListener method:
+ *   1) The type of event (by name.)
+ *   2) The instructions (what should run when the event occurs.)
+ *      (This means: a function!)
+ */
+hoverButton.addEventListener( 'mouseenter', () => {
+  console.log( 'The mouse has entered the button!' );
+} );
+
+hoverButton.addEventListener( 'mouseleave', () => {
+  console.log( 'The mouse has left the button!' );
+} );
+
+// Remove our class from the list for this element...
+firstSpan.classList.remove( 'salmon-coloured-text' );
+console.log( firstSpan.classList ); // Let's see if it worked!
+} );
+
+// Let's listen for a click on this button element...
+clickButton.addEventListener( 'click', () => {
+console.log( 'The "click" button was clicked.' );
+if ( secondSpan.classList.contains( 'salmon-coloured-text' ) )
+{ // If the class is already there... remove it!
+  secondSpan.classList.remove( 'salmon-coloured-text' );
+}
+else
+{ // If the class is NOT already there... add it!
+  secondSpan.classList.add( 'salmon-coloured-text' );
+}
+} );
